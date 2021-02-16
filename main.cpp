@@ -1,3 +1,5 @@
+// Agregar encabezado
+
 #include <iostream>
 #include <iomanip> // setprecision
 #include <cmath>
@@ -10,7 +12,7 @@ double f(double x);
 
 int main()
 {
-   cout << setprecision(PRECISION); // Establecemos la precisión
+   cout << setprecision(PRECISION); // Establecemos la precisiÃ³n
 
    double a, b, tolerancia,xraterior,error;
 
@@ -21,7 +23,7 @@ int main()
    cout << "intervalo superior = ";
    cin >> b;
 
-   double xr=0; // raiz de la función
+   double xr=0; // raiz de la funciÃ³n
 
 
    if (f(a) * f(b) > 0) {
@@ -42,7 +44,7 @@ int main()
         // cout << a << "\t" << b << "\t" << xr << "\t"<< f(a) << "\t" << f(b) << "\t" << f(xr) <<"\t"<< error << endl;
 
          // Vemos si cumple o no cumple
-         if (abs(f(xr)) <= tolerancia) { // xr sería la raiz de f
+         if (abs(f(xr)) <= tolerancia) { // xr serÃ­a la raiz de f
 
             cout << "\n\nPara una tolerancia de " << tolerancia << " la raiz de f es " << xr << endl;
 
@@ -51,9 +53,9 @@ int main()
          } else {
             if (f(xr) * f(a) > 0) {
                a = xr;
-            } else if (f(xr) * f(b) > 0) {
+            } else if (f(xr) * f(b) > 0) 
                b = xr;
-            }
+           
          }
 
       } while (1);
