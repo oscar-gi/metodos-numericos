@@ -10,18 +10,20 @@ double f(double x);
 
 int main()
 {
-   cout << setprecision(PRECISION); // Establecemos la precisión
+   cout << setprecision(PRECISION); // Establecemos la precisiÃ³n
 
    double a, b, tolerancia,xraterior,error;
 
    cout << "\n-------------Biseccion-------------" << endl;
    cout << "\nIngrese el intervalo inicial [a, b]" << endl;
    cout << "\nintervalo inferior = ";
+   cout << "\n Intervalo inferior = ";
    cin >> a;
    cout << "intervalo superior = ";
+   cout << "Intervalo superior = ";
    cin >> b;
 
-   double xr=0; // raiz de la función
+   double xr=0; // raiz de la funciÃ³n
 
 
    if (f(a) * f(b) > 0) {
@@ -42,7 +44,7 @@ int main()
         // cout << a << "\t" << b << "\t" << xr << "\t"<< f(a) << "\t" << f(b) << "\t" << f(xr) <<"\t"<< error << endl;
 
          // Vemos si cumple o no cumple
-         if (abs(f(xr)) <= tolerancia) { // xr sería la raiz de f
+         if (abs(f(xr)) <= tolerancia) { // xr serÃ­a la raiz de f
 
             cout << "\n\nPara una tolerancia de " << tolerancia << " la raiz de f es " << xr << endl;
 
